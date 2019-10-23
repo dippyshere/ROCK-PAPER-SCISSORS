@@ -50,6 +50,7 @@ def lives_difficulty():
     pass
     #lives and difficulty selct here
 def game_sp():
+)
     txt11 = Text(Point(100,100), ("Choose Lives: "))
     txt11.setTextColor('black')
     txt11.setFace('courier')
@@ -59,21 +60,6 @@ def game_sp():
     txt12.setTextColor('black')
     txt12.setFace('courier')
     txt12.setSize(15)
-    txt12.draw(win)
-    img4 = Image(Point(200,100), "Jah.png")
-    img4.draw(win)
-    img5 = Image(Point(250,100), "Jah.png")
-    img5.draw(win)
-    img6 = Image(Point(300,100), "Jah.png")
-    img6.draw(win)
-    img7 = Image(Point(350,100), "Jah.png")
-    img7.draw(win)
-    img8 = Image(Point(400,100), "Jah.png")
-    img8.draw(win)
-    img9 = Image(Point(450,100), "Jah.png")
-    img9.draw(win)
-    img10 = Image(Point(500,100), "Jah.png")
-    img10.draw(win)
     img11 = Image(Point(200,100), "Jah2.png")
     img11.draw(win)
     img12 = Image(Point(250,100), "Jah2.png")
@@ -105,42 +91,9 @@ def game_sp():
     txt12.setFace('courier')
     txt12.setSize(15)
     txt12.draw(win)
-    if 0 < x < 1000 and  0 < y < 700 :
 
-        img12.undraw()
-        img13.undraw()
-        img14.undraw()
-        img15.undraw()
-        img16.undraw()
-        img17.undraw()
-        img18.undraw()
 
-while True:
-    mouse = win.getClick()
-    x = mouse.getX()
-    y = mouse.getY()
-   hearts = [img4,img5,img6,img7,img8,img9,img10]
-   if 200 and 100:
-    for heart in hearts:
-        heart.undraw()
-   if 250 and 100:
-    for heart in hearts:
-        heart.undraw()
-   if 300 and 100:
-    for heart in hearts:
-        heart.undraw()
-   if 350 and 100:
-    for heart in hearts:
-        heart.undraw()
-   if 400 and 100:
-    for heart in hearts:
-        heart.undraw()
-   if 450 and 100:
-    for heart in hearts:
-        heart.undraw()
-   if 500 and 100:
-    for heart in hearts:
-        heart.undraw()
+
 
 
 
@@ -299,7 +252,4 @@ def mode_select():
    
 
 
-mode_select()        
-
-            
-            
+mode_select()  
