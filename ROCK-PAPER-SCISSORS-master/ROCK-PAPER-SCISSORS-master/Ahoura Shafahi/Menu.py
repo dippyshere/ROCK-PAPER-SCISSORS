@@ -24,7 +24,7 @@ def start():
     txt2.setTextColor('white')
     txt2.setFace('courier')
     txt2.setSize(60)
-    jah1 = True
+    jah1= True
     while jah1:
         #get mouse
         e=win.getMouse()
@@ -42,21 +42,117 @@ def start():
             if multiplayer == True:
                 lives_difficulty()
 def lives():
-    pass
-    #lives screen here
+    img4 = Image(Point(500,100, "Jah.png"))
+    img4.draw(win)
+
 
 def lives_difficulty():
     pass
     #lives and difficulty selct here
+def game_sp():
+    txt11 = Text(Point(100,100), ("Choose Lives: "))
+    txt11.setTextColor('black')
+    txt11.setFace('courier')
+    txt11.setSize(15)
+    txt11.draw(win)
+    txt12 = Text(Point(120,300), ("Choose Difficulty: "))
+    txt12.setTextColor('black')
+    txt12.setFace('courier')
+    txt12.setSize(15)
+    txt12.draw(win)
+    img4 = Image(Point(200,100), "Jah.png")
+    img4.draw(win)
+    img5 = Image(Point(250,100), "Jah.png")
+    img5.draw(win)
+    img6 = Image(Point(300,100), "Jah.png")
+    img6.draw(win)
+    img7 = Image(Point(350,100), "Jah.png")
+    img7.draw(win)
+    img8 = Image(Point(400,100), "Jah.png")
+    img8.draw(win)
+    img9 = Image(Point(450,100), "Jah.png")
+    img9.draw(win)
+    img10 = Image(Point(500,100), "Jah.png")
+    img10.draw(win)
+    img11 = Image(Point(200,100), "Jah2.png")
+    img11.draw(win)
+    img12 = Image(Point(250,100), "Jah2.png")
+    img12.draw(win)
+    img13 = Image(Point(300,100), "Jah2.png")
+    img13.draw(win)
+    img14 = Image(Point(350,100), "Jah2.png")
+    img14.draw(win)
+    img15 = Image(Point(400,100), "Jah2.png")
+    img15.draw(win)
+    img16 = Image(Point(450,100), "Jah2.png")
+    img16.draw(win)
+    img17 = Image(Point(500,100), "Jah2.png")
+    img17.draw(win)
+    img18 = Image(Point(500,100), "Jah2.png")
+    img18.draw(win)
+    txt12 = Text(Point(270,300), ("-Easy "))
+    txt12.setTextColor('black')
+    txt12.setFace('courier')
+    txt12.setSize(15)
+    txt12.draw(win)
+    txt12 = Text(Point(280,325), ("-Medium "))
+    txt12.setTextColor('black')
+    txt12.setFace('courier')
+    txt12.setSize(15)
+    txt12.draw(win)
+    txt12 = Text(Point(270,350), ("-Hard "))
+    txt12.setTextColor('black')
+    txt12.setFace('courier')
+    txt12.setSize(15)
+    txt12.draw(win)
+    if 0 < x < 1000 and  0 < y < 700 :
+
+        img12.undraw()
+        img13.undraw()
+        img14.undraw()
+        img15.undraw()
+        img16.undraw()
+        img17.undraw()
+        img18.undraw()
 
 
 
 def game_mp():
-    pass
+    txt8 = Text(Point(510,320), ("Take turns picking between rock paper and scissors "))
+    txt8.draw(win)
+    txt8.setTextColor('black')
+    txt8.setFace('courier')
+    txt8.setSize(15)
+    txt9 = Text(Point(510,340), ("multiplayer follows the same rules as normal rock paper scissors"))
+    txt9.draw(win)
+    txt9.setTextColor('black')
+    txt9.setFace('courier')
+    txt9.setSize(15)
+    txt10 = Text(Point(510,360), ("the person with the most points at the end wins!"))
+    txt10.draw(win)
+    txt10.setTextColor('black')
+    txt10.setFace('courier')
+    txt10.setSize(15)
     #make your multiplayer game here
 
 def how_to_play():
-    pass
+    txt5 = Text(Point(450,280), ("You Play a game of rock, paper, scissors but with a bot"))
+    txt5.draw(win)
+    txt5.setTextColor('black')
+    txt5.setFace('courier')
+    txt5.setSize(20)
+    txt6 = Text(Point(450,300), ("You can change the amount of lives and difficulty"))
+    txt6.draw(win)
+    txt6.setTextColor('black')
+    txt6.setFace('courier')
+    txt6.setSize(20)
+    txt7 = Text(Point(450,320), ("Rules: Have Fun :)"))
+    txt7.draw(win)
+    txt7.setTextColor('black')
+    txt7.setFace('courier')
+    txt7.setSize(20)
+                
+
     #make how to play instruction screen here
 def clear(win):
     for item in win.items:
@@ -130,7 +226,7 @@ def mode_select():
     jah = True
     while jah:
         #get mouse
-        e=win.getMouse()
+        e=win.getMouse()    
         #get x
         x=e.getX()
         #get y
@@ -146,7 +242,9 @@ def mode_select():
             img3.undraw()
             clear(win)
             single_player = True
+            game_sp()
             lives_difficulty()
+            
         #if click middle button
         elif 350 < x < 600 and 305 < y < 360:
             clear(win)
@@ -171,11 +269,7 @@ def mode_select():
             clear(win)
             how_to_play()            
 #how to play tab
-            txt = Text(Point(310,280), "You Play a game of rock, paper, scissors but with a bot. You can change the amount of lives and difficulty. Rules: Have Fun ")
-            txt.draw(win)
-            txt.setTextColor('white')
-            txt.setFace('courier')
-            txt.setSize(20)   
+   
 
 
 mode_select()        
